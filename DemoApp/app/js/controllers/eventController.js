@@ -19,21 +19,24 @@ eventsApp.controller('eventController',
           creatorName: 'Ben MacLean',
           duration: '1 hour',
           level: 'Advanced',
-          abstract: 'In this session you will learn the ins and outs of Directives!'
+          abstract: 'In this session you will learn the ins and outs of Directives!',
+          upVoteCount: 0,
         },
         {
           name: 'Scopes for fun and profit',
           creatorName: 'Tom MacLean',
           duration: '2 hours',
           level: 'Advanced',
-          abstract: 'In this session you will learn about Scopes!'
+          abstract: 'In this session you will learn about Scopes!',
+          upVoteCount: 0,
         },
         {
           name: 'Well Behaved Controllers',
           creatorName: 'Dan MacLean',
           duration: '1 hour',
           level: 'Advanced',
-          abstract: 'In this session you will learn about Controllers!'
+          abstract: 'In this session you will learn about Controllers!',
+          upVoteCount: 0,
         }
       ]
     }
