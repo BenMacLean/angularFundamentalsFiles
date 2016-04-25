@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <title>Event Registration</title>
-   <link rel="stylesheet" href="/css/bootsrap.min.css"/>
+   <link rel="stylesheet" href="/css/bootstrap.min.css"/>
    <link rel="stylesheet" href="/css/app.css"/>
 </head>
 <body>
@@ -11,14 +11,30 @@
    <div class="navbar">
      <div class="navbar-inner">
        <ul class="nav">
-
+          <h1>NAV</h1>
        </ul>
      </div>
    </div>
-   <div ng-controller="eventController">
-      {{event.name}}<br />
-      {{event.date}}<br />
-      {{event.time}}
+   <div ng-controller="eventController" style="padding-left: 20px; padding-right:2-px">
+     <img ng-src="{{event.imageURL}}" alt="{{event.name}}"/>
+      <div class="row">
+        <div class="spann11">
+          <h2>{{event.name}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span3">
+          <div><strong>Date:</strong> {{event.date}}</div>
+          <div><strong>Time:</strong> {{event.time}}</div>
+        </div>
+        <div class="span4">
+          <address>
+          <strong>Address:</strong><br/>
+          {{event.location.address}}<br/>
+          {{event.location.city}}, {{event.location.province}}
+        </address>
+        </div>
+      </div>
    </div>
 </div>
 
