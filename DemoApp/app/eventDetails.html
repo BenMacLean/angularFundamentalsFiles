@@ -19,11 +19,13 @@
      <img ng-src="{{event.imageURL}}" alt="{{event.name}}"/>
       <div class="row">
         <div class="spann11">
-          <h2 ng-class="myClass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
+          <h2 ng-class="myClass" ng-bind-template="{{event.name | uppercase}} {{event.date}}"></h2>
         </div>
       </div>
 
       <button class="btn" ng-disabled="buttonDisabled">Disabled</button>
+
+      <div ng-non-bindable>{{1 + 2 ng-non-bindable}}</div>
 
       <div ng-bind-html="snippet">some title</div>
 
@@ -33,6 +35,7 @@
         <div class="span3">
           <div><strong>Date:</strong> {{event.date}}</div>
           <div><strong>Time:</strong> {{event.time}}</div>
+          <div><strong>Price:</strong> {{34 | currency}}</div>
         </div>
         <div class="span4">
           <address>
@@ -43,6 +46,8 @@
         </div>
       </div>
 
+      {{ 3 * 10 }} {{"hello" + " " + "world"}}
+      <div>{{3 | number:2}}</div>
       <hr />
       <h3>Sessions</h3>
       <ul class="thumbnails">
