@@ -3,11 +3,7 @@
 eventsApp.controller('eventController',
   function eventController($scope) {
 
-    $scope.snippet = '<span style="color:red">hi there</span>';
-    $scope.boolValue = false;
-    $scope.buttonDisabled = true;
-    $scope.myStyle= {color:'red'}
-    $scope.myClass= "blue"
+    $scope.sortorder = 'name';
     $scope.event = {
       name: 'Angular Boot Camp',
       date: '1/1/2013',
@@ -31,7 +27,7 @@ eventsApp.controller('eventController',
           name: 'Scopes for fun and profit',
           creatorName: 'Tom MacLean',
           duration: '2 hours',
-          level: 'Advanced',
+          level: 'Beginner',
           abstract: 'In this session you will learn about Scopes!',
           upVoteCount: 0,
         },
@@ -39,7 +35,7 @@ eventsApp.controller('eventController',
           name: 'Well Behaved Controllers',
           creatorName: 'Dan MacLean',
           duration: '1 hour',
-          level: 'Advanced',
+          level: 'Intermediate',
           abstract: 'In this session you will learn about Controllers!',
           upVoteCount: 0,
         }
