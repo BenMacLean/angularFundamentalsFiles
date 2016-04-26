@@ -3,6 +3,11 @@
 eventsApp.controller('eventController',
   function eventController($scope) {
 
+    $scope.snippet = '<span style="color:red">hi there</span>';
+    $scope.boolValue = false;
+    $scope.buttonDisabled = true;
+    $scope.myStyle= {color:'red'}
+    $scope.myClass= "blue"
     $scope.event = {
       name: 'Angular Boot Camp',
       date: '1/1/2013',
